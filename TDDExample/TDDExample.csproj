@@ -24,6 +24,7 @@
     <None Remove="Views\" />
     <None Remove="Services\Interfaces\" />
     <None Remove="PropertyChanged.Fody" />
+    <None Remove="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -31,5 +32,6 @@
     <Folder Include="Services\" />
     <Folder Include="Views\" />
     <Folder Include="Services\Interfaces\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>
