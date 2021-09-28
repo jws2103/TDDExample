@@ -9,9 +9,11 @@ namespace TDDExample
     public class MyAccountPageModel : FreshBasePageModel
     {
         private readonly IBankAccountService _bankAccountService;
-        public MyAccountPageModel(IBankAccountService bankAccountService)
+        private readonly ILogger _logger;
+        public MyAccountPageModel(IBankAccountService bankAccountService, ILogger logger)
         {
             _bankAccountService = bankAccountService;
+            _logger = logger;
         }
 
         public BankAccount MyAccount { get; set; }
@@ -30,6 +32,7 @@ namespace TDDExample
                 1.  Create the account with your name and initial deposit when the page is initiated
                 2.  Set MyAccount
                 3.  Wrap with try & catch statement in case the exception is thrown
+                3.1.Log the exception in catch
              */
             // TODO: Implements
         }
@@ -40,6 +43,7 @@ namespace TDDExample
                 1.  Call the Deposit method from IBankAccountService when DepositAmount is greater than 0
                 2.  Update the Balance property of MyAccount
                 3.  Wrap with try & catch statement in case the exception is thrown
+                3.1.Log the exception in catch
              */
             // TODO: Implements
         }
@@ -50,6 +54,7 @@ namespace TDDExample
                 1.  Call the Withdraw method from IBankAccountService when WithdrawAmount is greater than 0
                 2.  Update the Balance property of MyAccount
                 3.  Wrap with try & catch statement in case the exception is thrown
+                3.1.Log the exception in catch
              */
             // TODO: Implements
         }

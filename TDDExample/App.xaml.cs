@@ -27,6 +27,7 @@ namespace TDDExample
         {
             // Add IOC stuffs
             FreshIOC.Container.Register<IBankAccountService, BankAccountService>();
+            FreshIOC.Container.Register<ILogger, Logger>();
         }
     }
 }

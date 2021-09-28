@@ -5,21 +5,39 @@
     xmlns:tddexample="clr-namespace:TDDExample"
     x:DataType="tddexample:MyAccountPageModel"
     x:Class="TDDExample.MyAccountPage">
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center">
+        <Label Text="My account summary"
+               VerticalTextAlignment="Start"
+               HorizontalTextAlignment="Center" />
+        <Label Text="{Binding MyAccount.AccountName}" />
+        <Label Text="{Binding MyAccount.BSBNumber}" />
+        <Label Text="{Binding MyAccount.AccountNumber}" />
+        <Label Text="{Binding MyAccount.Balance, StringFormat='The current balance is {0:F2}'}" />
+        <Grid RowDefinitions="Auto,Auto"
+              ColumnDefinitions="*,*">
+            <Label Text="Deposit amount"
+                   TextDecorations="Underline" />
+            <Entry Grid.Row="1"
+                   Grid.Column="0"
+                   Text="{Binding DepositAmount}"
+                   Keyboard="Numeric" />
+            <Label Grid.Row="0"
+                   Grid.Column="1"
+                   Text="Withdraw amount"
+                   TextDecorations="Underline" />
+            <Entry Grid.Row="1"
+                   Grid.Column="1"
+                   Text="{Binding WithdrawAmount}"
+                   Keyboard="Numeric" />
+        </Grid>
+        <Grid ColumnDefinitions="*,*"
+              ColumnSpacing="10">
+            <Button Text="Deposit"
+                    Command="{Binding DepositCommand}" />
+            <Button Grid.Column="1"
+                    Text="Withdraw"
+                    Command="{Binding WithdrawCommand}" />
+        </Grid>
     </StackLayout>
 </ContentPage>
