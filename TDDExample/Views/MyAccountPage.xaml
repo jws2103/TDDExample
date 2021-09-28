@@ -6,14 +6,15 @@
     x:DataType="tddexample:MyAccountPageModel"
     x:Class="TDDExample.MyAccountPage">
     <StackLayout VerticalOptions="Center"
-                 HorizontalOptions="Center">
+                 HorizontalOptions="Center"
+                 Padding="20">
         <Label Text="My account summary"
                VerticalTextAlignment="Start"
                HorizontalTextAlignment="Center" />
         <Label Text="{Binding MyAccount.AccountName}" />
         <Label Text="{Binding MyAccount.BSBNumber}" />
         <Label Text="{Binding MyAccount.AccountNumber}" />
-        <Label Text="{Binding MyAccount.Balance, StringFormat='The current balance is {0:F2}'}" />
+        <Label Text="{Binding MyAccount.Balance, StringFormat='The current balance is {0:C2}'}" />
         <Grid RowDefinitions="Auto,Auto"
               ColumnDefinitions="*,*">
             <Label Text="Deposit amount"
