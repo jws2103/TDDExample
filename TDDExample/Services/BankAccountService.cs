@@ -36,7 +36,8 @@ namespace TDDExample
         {
             /* Requirements
                 1.  Throw the exception if your current account doesn't exist
-                2.  Subtract the amount from your current balance
+                2.  Throw the exception if amount to withdraw is greater than the current balance
+                3.  Subtract the amount from your current balance
              */
             throw new NotImplementedException();
         }

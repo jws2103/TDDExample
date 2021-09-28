@@ -42,8 +42,9 @@ namespace TDDExample
             /* Requirements
                 1.  Call the Deposit method from IBankAccountService when DepositAmount is greater than 0
                 2.  Update the Balance property of MyAccount
-                3.  Wrap with try & catch statement in case the exception is thrown
-                3.1.Log the exception in catch
+                3.  Reset DepositAmount to 0
+                4.  Wrap with try & catch statement in case the exception is thrown
+                4.1.Log the exception in catch
              */
             // TODO: Implements
         }
@@ -53,8 +54,9 @@ namespace TDDExample
             /* Requirements
                 1.  Call the Withdraw method from IBankAccountService when WithdrawAmount is greater than 0
                 2.  Update the Balance property of MyAccount
-                3.  Wrap with try & catch statement in case the exception is thrown
-                3.1.Log the exception in catch
+                3.  Reset WithdrawAmount to 0
+                4.  Wrap with try & catch statement in case the exception is thrown
+                4.1.Log the exception in catch
              */
             // TODO: Implements
         }

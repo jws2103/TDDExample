@@ -1,5 +1,8 @@
-﻿namespace TDDExample
+﻿using PropertyChanged;
+
+namespace TDDExample
 {
+    [AddINotifyPropertyChangedInterface]
     public class BankAccount
     {
         /// <summary>
