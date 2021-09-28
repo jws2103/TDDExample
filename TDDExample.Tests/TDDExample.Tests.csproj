@@ -26,6 +26,7 @@
     <None Remove="Moq.AutoMock" />
     <None Remove="ViewModels\" />
     <None Remove="Services\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDExample\TDDExample.csproj" />
@@ -33,5 +34,6 @@
   <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

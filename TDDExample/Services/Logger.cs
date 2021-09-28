@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 namespace TDDExample
 {
-    [ExcludeFromCoverage]
+    [ExcludeFromCodeCoverage]
     public class Logger : ILogger
     {
         public void Log(string exception)
