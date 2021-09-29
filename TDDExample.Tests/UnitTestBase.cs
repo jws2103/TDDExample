@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using Moq.AutoMock;
+﻿using Moq.AutoMock;
 
 namespace TDDExample.Tests
 {
@@ -7,9 +6,8 @@ namespace TDDExample.Tests
     {
         protected UnitTestBase()
         {
-            Sut = Mocker.CreateInstance<T>();
-            CultureInfo.CurrentCulture = new CultureInfo("en-AU");
             Mocker = new AutoMocker();
+            Sut = Mocker.CreateInstance<T>();
         }
 
         protected AutoMocker Mocker { get; }    // Mocker
