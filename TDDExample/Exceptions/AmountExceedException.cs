@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics.CodeAnalysis;
 
-namespace TDDExample.Exceptions
+namespace TDDExample
 {
     [ExcludeFromCodeCoverage]
     public class AmountExceedException : Exception
