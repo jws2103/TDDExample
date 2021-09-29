@@ -23,21 +23,21 @@ namespace TDDExample
             throw new NotImplementedException();
         }
 
-        public void Deposit(double amount)
+        public bool Deposit(double amount)
         {
             /* Requirements
                 1.  Throw AccountNotFoundException if your current account doesn't exist
-                2.  Add your balance by the amount passed over
+                2.  Add your balance by the amount passed over and return true
              */
             throw new NotImplementedException();
         }
 
-        public void Withdraw(double amount)
+        public bool Withdraw(double amount)
         {
             /* Requirements
                 1.  Throw AccountNotFoundException if your current account doesn't exist
                 2.  Throw AmountExceedException if amount to withdraw is greater than the current balance
-                3.  Subtract the amount from your current balance
+                3.  Subtract the amount from your current balance and return true
              */
             throw new NotImplementedException();
         }
