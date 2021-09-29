@@ -14,15 +14,6 @@ namespace TDDExample
             throw new NotImplementedException();
         }
 
-        public double GetBalance()
-        {
-            /* Requirements
-                1.  Throw AccountNotFoundException if your current account doesn't exist
-                2.  Return the balance of your current account
-             */
-            throw new NotImplementedException();
-        }
-
         public double Deposit(double amount)
         {
             /* Requirements

@@ -11,12 +11,6 @@
         BankAccount CreateAccount(string accountHolder, double initAmount);
 
         /// <summary>
-        /// Get balance will return the current balance of my account
-        /// </summary>
-        /// <returns>current balance</returns>
-        double GetBalance();
-
-        /// <summary>
         /// Deposit the money into my account
         /// </summary>
         /// <param name="amount">money to put</param>
