@@ -20,14 +20,14 @@
         /// Deposit the money into my account
         /// </summary>
         /// <param name="amount">money to put</param>
-        /// <returns>success flag</returns>
-        bool Deposit(double amount);
+        /// <returns>current balance</returns>
+        double Deposit(double amount);
 
         /// <summary>
         /// Withdraw the money from my account
         /// </summary>
         /// <param name="amount">amount to withdraw</param>
-        /// <returns>success flag</returns>
-        bool Withdraw(double amount);
+        /// <returns>current balance</returns>
+        double Withdraw(double amount);
     }
 }
