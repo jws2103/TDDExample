@@ -1,7 +1,9 @@
-﻿using FreshMvvm;
+﻿using System.Diagnostics.CodeAnalysis;
+using FreshMvvm;
 
 namespace TDDExample
 {
+    [ExcludeFromCodeCoverage]
     public partial class App
     {
         public App()
