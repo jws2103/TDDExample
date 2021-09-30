@@ -31,8 +31,6 @@ namespace TDDExample
             /* Requirements
                 1.  Create the account with your name and initial deposit when the page is initiated
                 2.  Set MyAccount
-                3.  Wrap with try & catch statement in case the exception is thrown
-                3.1.Log the exception in catch
              */
             // TODO: Implements
         }
