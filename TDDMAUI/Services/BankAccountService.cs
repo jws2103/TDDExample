@@ -16,7 +16,7 @@ public class BankAccountService : IBankAccountService
             1.  Throw AccountNotFoundException if your current account doesn't exist
             2.  Add your balance by the amount passed over
          */
-        return 0;
+        return -1;
     }
 
     public double Withdraw(double amount)
@@ -26,6 +26,6 @@ public class BankAccountService : IBankAccountService
             2.  Throw AmountExceedException if amount to withdraw is greater than the current balance
             3.  Subtract the amount from your current balance
          */
-        return 0;
+        return -1;
     }
 }
