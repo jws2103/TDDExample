@@ -5,7 +5,6 @@ namespace TDDMAUI.Services;
 
 public class BankAccountService : IBankAccountService
 {
-    private BankAccount _currentAccount;
     public BankAccount CreateAccount(string accountHolder, double initAmount)
     {
         return null;
